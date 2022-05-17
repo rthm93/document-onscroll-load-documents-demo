@@ -21,3 +21,7 @@ div {
     display: block;
   }
 }
+
+.col {
+  min-height: 500px;
+}
