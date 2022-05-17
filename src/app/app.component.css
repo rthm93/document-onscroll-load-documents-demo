@@ -1,0 +1,23 @@
+div {
+  font-family: Lato;
+}
+.search-results {
+  height: 100%;
+}
+
+.flex-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flex-grid .col {
+  flex: 1 0 30%;
+  margin: 5px;
+}
+
+@media (max-width: 765px) {
+  .flex-grid {
+    display: block;
+  }
+}

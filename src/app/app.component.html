@@ -1,0 +1,15 @@
+<div
+  class="search-results flex-grid"
+  infinite-scroll
+  [infiniteScrollDistance]="scrollDistance"
+  [infiniteScrollUpDistance]="scrollUpDistance"
+  [infiniteScrollThrottle]="throttle"
+  (scrolled)="onScrollDown($event)"
+  (scrolledUp)="onUp($event)"
+>
+  <div class="col" *ngFor="let i of array">
+    {{ i }}
+  </div>
+</div>
+
+<button *ngIf="page < 3" (click)="onScrollDown($event)">Show More</button>
